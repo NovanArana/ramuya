@@ -398,10 +398,22 @@
     });
   }
 
+  /* Elemen yang SUDAH terlihat saat halaman dibuka (mis. form kontak di HP) punya rentang animasi nol/negatif,
+     sehingga ScrollTrigger tidak pernah menjalankannya dan elemen tertinggal tak terlihat (opacity 0).
+     Untuk kasus itu animasi langsung diselesaikan ke kondisi akhirnya. */
+  function settleZeroLength() {
+    ScrollTrigger.getAll().forEach(st => {
+      if (st.pin || !st.animation || st.end - st.start >= 2) return;
+      const anim = st.animation;
+      st.kill();
+      anim.progress(1).kill();
+    });
+  }
+
   function start() {
     build();
-    ScrollTrigger.addEventListener("refresh", paintSpacers);
-    requestAnimationFrame(() => { ScrollTrigger.refresh(); paintSpacers(); });
+    ScrollTrigger.addEventListener("refresh", () => { settleZeroLength(); paintSpacers(); });
+    requestAnimationFrame(() => ScrollTrigger.refresh());
   }
 
   // Preloader sedang diputar → tunggu sampai selesai (posisi pin harus dihitung setelah layout final)
