@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ramuya — freelance web design untuk brand yang ingin tampil hangat, modern, dan berkesan.">
+  <title>Ramuya — Web Design Studio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Font utama: SF Pro (bawaan perangkat Apple). Inter dipakai sebagai pengganti di perangkat lain -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <!-- Brand icons + info untuk Google / media sosial -->
+  <link rel="icon" href="assets/images/favicon.ico" sizes="48x48">
+  <link rel="icon" type="image/png" sizes="48x48" href="assets/images/favicon-48.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="assets/images/favicon-96.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/images/favicon-192.png">
+  <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
+  <meta name="theme-color" content="#000000">
+  <meta property="og:site_name" content="Ramuya">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://ramuya.com/assets/images/ramuya-logo.png">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Ramuya",
+    "url": "https://ramuya.com/",
+    "logo": "https://ramuya.com/assets/images/ramuya-logo.png"
+  }
+  </script>
+  <script src="assets/js/intro-check.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-bar">
+      <a class="logo" href="index.html" aria-label="Ramuya — home">
+        <img class="logo-dark" src="assets/images/logo-lockup-dark.png" alt="Ramuya" width="305" height="96">
+        <img class="logo-light" src="assets/images/logo-lockup-light.png" alt="" aria-hidden="true" width="305" height="96">
+      </a>
+      <nav class="nav">
+        <a href="index.html" class="active">Home</a>
+        <a href="services.html">Services</a>
+        <a href="work.html">Work</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a class="nav-cta" href="contact.html" data-whatsapp><span>Let's talk</span><i>→</i></a>
+      </nav>
+      <button class="menu-toggle" aria-label="Buka menu" aria-expanded="false"><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main>
+    <!-- SCENE 1 — HERO. Mockup produk jadi membesar mengisi layar saat scroll, lalu masuk ke kalimat approach -->
+    <section class="scene scene-hero" data-scene="hero">
+      <div class="hero-copy-wrap">
+        <p class="eyebrow">Independent web design &amp; development · Bali / Indonesia</p>
+        <h1 class="hero-title"><span class="line">Websites with a</span> <span class="line"><span class="grad">little soul.</span></span></h1>
+        <p class="hero-sub">Ramuya crafts thoughtful digital experiences for people and brands who believe their website should feel as good as it looks.</p>
+        <div class="hero-actions">
+          <a href="work.html" class="btn btn-dark">Explore my work</a>
+          <a href="contact.html" data-whatsapp class="text-link">Start a project</a>
+        </div>
+      </div>
+
+      <!-- Produk jadi: 3 browser + 2 phone (gambar di assets/images) -->
+      <div class="hero-stage" aria-hidden="true">
+        <figure class="device browser dv-left"><div class="browser-bar"><i></i><i></i><i></i></div><img src="assets/images/enviora_desktop.png" alt="Enviora" width="1897" height="927" onerror="this.closest('.device') ? this.closest('.device').remove() : this.remove()"></figure>
+        <figure class="device browser dv-right"><div class="browser-bar"><i></i><i></i><i></i></div><img src="assets/images/gracie_desktop.png" alt="Gracie Efata House" width="1901" height="925" onerror="this.closest('.device') ? this.closest('.device').remove() : this.remove()"></figure>
+        <figure class="device browser dv-main"><div class="browser-bar"><i></i><i></i><i></i></div><img src="assets/images/nusatrail_desktop.png" alt="Nusa Trail" width="1901" height="923" onerror="this.closest('.device') ? this.closest('.device').remove() : this.remove()"></figure>
+        <figure class="device phone dv-phone-1"><img src="assets/images/nusatrail_mobile.jpeg" alt="Nusa Trail mobile" width="852" height="1599" onerror="this.closest('.device') ? this.closest('.device').remove() : this.remove()"></figure>
+        <figure class="device phone dv-phone-2"><img src="assets/images/enviora_mobile.jpeg" alt="Enviora mobile" width="792" height="1598" onerror="this.closest('.device') ? this.closest('.device').remove() : this.remove()"></figure>
+      </div>
+
+      <div class="hero-dim"></div>
+
+      <div class="hero-statement">
+        <span class="eyebrow">01 / the ramuya approach</span>
+        <h2 class="statement" data-split>Not just a website.<br><span class="grad">A feeling.</span></h2>
+        <p class="statement-sub">I blend warm visual direction, clear structure and playful motion to create websites that feel human — never cold, never cookie-cutter.</p>
+        <a class="text-link" href="about.html">More about Ramuya</a>
+      </div>
+    </section>
+
+    <!-- Ticker: kecepatannya bereaksi terhadap kecepatan & arah scroll (GSAP) -->
+    <section class="marquee-section">
+      <div class="marquee"><div>strategy <i>/</i> design <i>/</i> development <i>/</i> motion <i>/</i> strategy <i>/</i> design <i>/</i> development <i>/</i> motion <i>/</i> strategy <i>/</i> design <i>/</i> development <i>/</i> motion <i>/</i> strategy <i>/</i> design <i>/</i> development <i>/</i> motion <i>/</i> </div></div>
+    </section>
+
+    <!-- SCENE 2 — SERVICES (pinned, kartu bergeser horizontal) -->
+    <section class="scene scene-services" data-scene="services">
+      <div class="scene-head">
+        <div><span class="eyebrow">02 / what I do</span><h2 class="scene-title">What I do.</h2></div>
+        <a class="text-link" href="services.html">View all services</a>
+      </div>
+      <div class="h-track">
+          <a class="h-card c-blue" href="services.html"><span class="num">01</span><h3>Web Design</h3><p>Visual direction, wireframes, responsive layouts and a distinctive design system tailored to your brand.</p><img src="assets/images/nusatrail_desktop.png" alt="Web Design" width="1901" height="923" class="h-img" onerror="this.closest('.device') ? this.closest('.device').remove() : this.remove()"></a>
+          <a class="h-card c-purple" href="services.html"><span class="num">02</span><h3>Web Development</h3><p>Clean, responsive and lightweight front-end development that turns the design into a living experience.</p><img src="assets/images/enviora_desktop.png" alt="Web Development" width="1897" height="927" class="h-img" onerror="this.closest('.device') ? this.closest('.device').remove() : this.remove()"></a>
+          <a class="h-card c-orange" href="services.html"><span class="num">03</span><h3>UI / UX Direction</h3><p>Helping your digital product become easier to understand, nicer to use and more consistent.</p><img src="assets/images/gracie_desktop.png" alt="UI / UX Direction" width="1901" height="925" class="h-img" onerror="this.closest('.device') ? this.closest('.device').remove() : this.remove()"></a>
+          <a class="h-card c-green" href="services.html"><span class="num">04</span><h3>Landing Pages</h3><p>Focused pages designed around one clear goal — launch, promote, collect leads or make a strong first impression.</p><img src="assets/images/enviora_desktop.png" alt="Landing Pages" width="1901" height="925" class="h-img" onerror="this.closest('.device') ? this.closest('.device').remove() : this.remove()"></a>
+      </div>
+      <div class="h-progress"><span></span></div>
+    </section>
+
+    <!-- SCENE 3 — SELECTED WORK (pinned, proyek berganti satu per satu) -->
+    <section class="scene scene-work" data-scene="work">
+      <div class="scene-head">
+        <div><span class="eyebrow">03 / selected work</span></div>
+        <a class="text-link" href="work.html">See all projects</a>
+      </div>
+      <div class="work-copy">
+          <div class="work-text" data-i="0"><span class="work-index">01 / 04</span><h2>Nusa Trail</h2><p>Sustainable Tourism Website</p><a class="text-link" href="project-nusa-trail.html" data-cursor="View">View project</a></div>
+          <div class="work-text" data-i="1"><span class="work-index">02 / 04</span><h2>Enviora</h2><p>Smart &amp; Sustainable Community Portal</p><a class="text-link" href="project-enviora.html" data-cursor="View">View project</a></div>
+          <div class="work-text" data-i="2"><span class="work-index">03 / 04</span><h2>Gracie Efata</h2><p>Boarding House Website</p><a class="text-link" href="project-gracie-efata-house.html" data-cursor="View">View project</a></div>
+          <div class="work-text" data-i="3"><span class="work-index">04 / 04</span><h2>Mi Baguetto</h2><p>Bakery Website</p><a class="text-link" href="project-mi-baguetto.html" data-cursor="View">View project</a></div>
+      </div>
+      <div class="work-visuals">
+          <div class="work-visual" data-i="0"><figure class="device browser wv-desk"><div class="browser-bar"><i></i><i></i><i></i></div><img src="assets/images/nusatrail_desktop.png" alt="Nusa Trail" width="1901" height="923" onerror="this.closest('.device') ? this.closest('.device').remove() : this.remove()"></figure><figure class="device phone wv-phone"><img src="assets/images/nusatrail_mobile.jpeg" alt="Nusa Trail mobile" width="852" height="1599" onerror="this.closest('.device') ? this.closest('.device').remove() : this.remove()"></figure><div class="fallback g-blue"><span>NUSA</span></div></div>
+          <div class="work-visual" data-i="1"><figure class="device browser wv-desk"><div class="browser-bar"><i></i><i></i><i></i></div><img src="assets/images/enviora_desktop.png" alt="Enviora" width="1897" height="927" onerror="this.closest('.device') ? this.closest('.device').remove() : this.remove()"></figure><figure class="device phone wv-phone"><img src="assets/images/enviora_mobile.jpeg" alt="Enviora mobile" width="792" height="1598" onerror="this.closest('.device') ? this.closest('.device').remove() : this.remove()"></figure><div class="fallback g-green"><span>ENV.</span></div></div>
+          <div class="work-visual" data-i="2"><figure class="device browser wv-desk"><div class="browser-bar"><i></i><i></i><i></i></div><img src="assets/images/gracie_desktop.png" alt="Gracie Efata House" width="1901" height="925" onerror="this.closest('.device') ? this.closest('.device').remove() : this.remove()"></figure><figure class="device phone wv-phone"><img src="assets/images/gracie_mobile.jpeg" alt="Gracie Efata House mobile" width="858" height="1599" onerror="this.closest('.device') ? this.closest('.device').remove() : this.remove()"></figure><div class="fallback g-orange"><span>GRACIE</span></div></div>
+          <div class="work-visual" data-i="3"><figure class="device browser wv-desk"><div class="browser-bar"><i></i><i></i><i></i></div><img src="assets/images/mibaguetto_desktop.png" alt="Mi Baguetto" onerror="this.closest('.device') ? this.closest('.device').remove() : this.remove()"></figure><figure class="device phone wv-phone"><img src="assets/images/mibaguetto_mobile.jpeg" alt="Mi Baguetto mobile" onerror="this.closest('.device') ? this.closest('.device').remove() : this.remove()"></figure><div class="fallback g-purple"><span>BAKE.</span></div></div>
+      </div>
+      <div class="work-dots"><i></i><i></i><i></i><i></i></div>
+    </section>
+
+    <!-- SCENE 4 — QUOTE (pinned, kata menyala satu per satu) -->
+    <section class="scene scene-quote" data-scene="quote">
+      <div class="quote-inner">
+        <blockquote>Good design doesn't shout.<br><span class="grad">It stays with you.</span></blockquote>
+      </div>
+    </section>
+
+    <section class="section packages" id="packages">
+      <div class="packages-head">
+        <p class="eyebrow">packages</p>
+        <h2 class="title">Pick a plan.<br><span class="grad">Make it yours.</span></h2>
+        <p class="page-lead">Every project is scoped around your goals. Choose a starting point and I'll tailor it with you.</p>
+      </div>
+
+      <!-- Special offer: ubah teksnya sesuai promo yang sedang berlaku -->
+      <div class="offer">
+        <span class="offer-badge">Special offer</span>
+        <p><strong>Free 30-minute consultation</strong> for every new project. I'll map your goals, pages and timeline before you commit to anything.</p>
+        <a class="btn btn-dark" href="contact.html" data-whatsapp data-wa-text="Halo Ramuya, saya ingin klaim free consultation 30 menit.">Claim offer</a>
+      </div>
+
+      <div class="plans">
+        <article class="plan">
+          
+          <h3>Landing Page</h3>
+          <p class="plan-desc">One focused page built around a single goal: launch, promote or collect leads.</p>
+          <!-- Ganti "Custom quote" dengan harga paket kamu, mis. Rp 2.500.000 -->
+          <div class="plan-price"><small>Starting from</small><strong>Rp 1.000.000</strong></div>
+          <ul class="plan-list"><li>Single-page responsive design</li><li>Clear copy and visual hierarchy</li><li>WhatsApp / contact button</li><li>Launch-ready delivery</li></ul>
+          <a class="btn " href="contact.html" data-whatsapp data-wa-text="Halo Ramuya, saya tertarik dengan paket Landing Page.">Ask about this plan</a>
+        </article>
+        <article class="plan plan-featured">
+          <span class="plan-badge">Most popular</span>
+          <h3>Business Website</h3>
+          <p class="plan-desc">A complete multi-page website that represents your brand properly.</p>
+          <!-- Ganti "Custom quote" dengan harga paket kamu, mis. Rp 2.500.000 -->
+          <div class="plan-price"><small>Starting from</small><strong>Rp 1.300.000</strong></div>
+          <ul class="plan-list"><li>Multi-page structure (Home, Services, About, Contact)</li><li>Custom design system</li><li>Smooth animations and interactions</li><li>Performance-minded build</li><li>Contact form to email / WhatsApp</li></ul>
+          <a class="btn btn-dark" href="contact.html" data-whatsapp data-wa-text="Halo Ramuya, saya tertarik dengan paket Business Website.">Ask about this plan</a>
+        </article>
+        <article class="plan">
+          
+          <h3>Custom Experience</h3>
+          <p class="plan-desc">Fully tailored design and motion for ambitious ideas.</p>
+          <!-- Ganti "Custom quote" dengan harga paket kamu, mis. Rp 2.500.000 -->
+          <div class="plan-price"><small>Starting from</small><strong>Rp 1.600.000</strong></div>
+          <ul class="plan-list"><li>UI / UX direction and user flows</li><li>Advanced scroll animations</li><li>Reusable component system</li><li>Priority support after launch</li></ul>
+          <a class="btn " href="contact.html" data-whatsapp data-wa-text="Halo Ramuya, saya tertarik dengan paket Custom Experience.">Ask about this plan</a>
+        </article>
+      </div>
+
+      <ul class="included">
+        <li>Responsive on every device</li>
+        <li>Performance-minded builds</li>
+        <li>Launch-ready delivery</li>
+        <li>Direct line to me on WhatsApp</li>
+      </ul>
+    </section>
+    <section class="ambient-section scene" data-scene="ambient">
+      <div class="ambient-copy">
+        <span class="eyebrow">a little more ramuya</span>
+        <h2 class="title" data-split>Beautiful things<br><span class="grad">take a little movement.</span></h2>
+      </div>
+      <div class="ambient-stage">
+        <div class="phone3d"><figure class="device phone "><img src="assets/images/nusatrail_mobile.jpeg" alt="Nusa Trail mobile" width="852" height="1599" onerror="this.closest('.device') ? this.closest('.device').remove() : this.remove()"></figure></div>
+        <span class="chip chip-a">thoughtful</span><span class="chip chip-b">playful</span><span class="chip chip-c">made with care</span>
+      </div>
+    </section>
+    <section class="cta-section">
+      <p class="eyebrow">have a good idea?</p>
+      <h2 class="cta-title" data-split>Let's make it<br><span class='grad'>beautiful.</span></h2>
+      <a href="contact.html" data-whatsapp class="btn btn-dark">Tell me about it</a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p class="footer-note">Thoughtful websites for brands, people, and ideas with something to say.</p>
+      <div class="footer-cols">
+        <div class="footer-column"><span class="footer-label">Explore</span><a href="index.html">Home</a><a href="services.html">Services</a><a href="work.html">Work</a><a href="about.html">About</a><a href="contact.html">Contact</a></div>
+        <div class="footer-column"><span class="footer-label">Services</span><a href="services.html">Web Design</a><a href="services.html">Web Development</a><a href="services.html">Landing Pages</a><a href="services.html">UI/UX Direction</a></div>
+        <div class="footer-column"><span class="footer-label">Say hello</span><a href="mailto:ramuya2026@gmail.com">ramuya2026@gmail.com</a><span>Bali, Indonesia</span><span>Working worldwide</span></div>
+        <div class="footer-column"><span class="footer-label">Follow</span>
+          <a href="https://www.instagram.com/ramuya.official/" target="_blank" rel="noopener">Instagram</a>
+          <a href="https://www.linkedin.com/search/results/all/?keywords=Novan%20Mirza%20Arana%20Putro" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://github.com/NovanArana" target="_blank" rel="noopener">GitHub</a></div>
+      </div>
+      <div class="footer-bottom"><span>© 2026 Ramuya. All rights reserved.</span><span>made with intention · and a little code</span></div>
+    </div>
+  </footer>
+
+  <script src="assets/js/vendor/gsap.min.js"></script>
+  <script src="assets/js/vendor/ScrollTrigger.min.js"></script>
+  <script src="assets/js/vendor/lenis.min.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/smooth-scroll.js"></script>
+  <script src="assets/js/intro.js"></script>
+  <script src="assets/js/motion.js"></script>
+  <script src="assets/js/scroll-story.js"></script>
+</body>
+</html>

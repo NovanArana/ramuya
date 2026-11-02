@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ramuya — freelance web design untuk brand yang ingin tampil hangat, modern, dan berkesan.">
+  <title>Contact — Ramuya</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Font utama: SF Pro (bawaan perangkat Apple). Inter dipakai sebagai pengganti di perangkat lain -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <!-- Brand icons + info untuk Google / media sosial -->
+  <link rel="icon" href="assets/images/favicon.ico" sizes="48x48">
+  <link rel="icon" type="image/png" sizes="48x48" href="assets/images/favicon-48.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="assets/images/favicon-96.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/images/favicon-192.png">
+  <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
+  <meta name="theme-color" content="#000000">
+  <meta property="og:site_name" content="Ramuya">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://ramuya.com/assets/images/ramuya-logo.png">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Ramuya",
+    "url": "https://ramuya.com/",
+    "logo": "https://ramuya.com/assets/images/ramuya-logo.png"
+  }
+  </script>
+  <script src="assets/js/intro-check.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-bar">
+      <a class="logo" href="index.html" aria-label="Ramuya — home">
+        <img class="logo-dark" src="assets/images/logo-lockup-dark.png" alt="Ramuya" width="305" height="96">
+        <img class="logo-light" src="assets/images/logo-lockup-light.png" alt="" aria-hidden="true" width="305" height="96">
+      </a>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="work.html">Work</a>
+        <a href="about.html">About</a>
+        <a href="contact.html" class="active">Contact</a>
+        <a class="nav-cta" href="contact.html" data-whatsapp><span>Let's talk</span><i>→</i></a>
+      </nav>
+      <button class="menu-toggle" aria-label="Buka menu" aria-expanded="false"><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero contact-hero">
+      <p class="eyebrow">contact / let's create</p>
+      <h1 class="page-title">Tell me about<br><span class="grad">your idea.</span></h1>
+      <p class="page-lead">Got a website in mind? A brand that needs a home? Or simply an idea you can't stop thinking about? I'd love to hear it.</p>
+    </section>
+
+    <section class="section contact-wrap">
+      <!-- Form: saat dikirim, pengunjung dibawa ke Gmail dengan pesan yang sudah terisi (lihat main.js) -->
+      <form class="contact-form reveal" id="contact-form" novalidate>
+        <label>Your name<input type="text" name="name" placeholder="Jane Doe" required></label>
+        <label>Email address<input type="email" name="email" placeholder="hello@example.com" required></label>
+        <label>What are we making?<select name="project_type"><option>Website</option><option>Landing page</option><option>UI / UX design</option><option>Something else</option></select></label>
+        <label>Tell me a little<textarea name="message" placeholder="A few words about your project, timeline, or anything else..." required></textarea></label>
+        <!-- Honeypot anti-spam: dibiarkan kosong oleh manusia, diisi oleh bot -->
+        <input type="text" name="_honey" tabindex="-1" autocomplete="off" style="display:none">
+        <button class="btn btn-dark" type="submit">Send inquiry</button>
+        <div class="form-status" role="status" aria-live="polite"></div>
+      </form>
+
+      <aside class="contact-aside reveal">
+        <div><span class="mini-label">email</span><a href="mailto:ramuya2026@gmail.com">ramuya2026@gmail.com</a></div>
+        <div><span class="mini-label">based in</span><p>Bali, Indonesia<br><em>working worldwide.</em></p></div>
+        <div><span class="mini-label">social</span><p>
+          <a href="https://www.instagram.com/ramuya.official/" target="_blank" rel="noopener">Instagram</a><br>
+          <a href="https://www.linkedin.com/search/results/all/?keywords=Novan%20Mirza%20Arana%20Putro" target="_blank" rel="noopener">LinkedIn</a><br>
+          <a href="https://github.com/NovanArana" target="_blank" rel="noopener">GitHub</a></p></div>
+      </aside>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p class="footer-note">Thoughtful websites for brands, people, and ideas with something to say.</p>
+      <div class="footer-cols">
+        <div class="footer-column"><span class="footer-label">Explore</span><a href="index.html">Home</a><a href="services.html">Services</a><a href="work.html">Work</a><a href="about.html">About</a><a href="contact.html">Contact</a></div>
+        <div class="footer-column"><span class="footer-label">Services</span><a href="services.html">Web Design</a><a href="services.html">Web Development</a><a href="services.html">Landing Pages</a><a href="services.html">UI/UX Direction</a></div>
+        <div class="footer-column"><span class="footer-label">Say hello</span><a href="mailto:ramuya2026@gmail.com">ramuya2026@gmail.com</a><span>Bali, Indonesia</span><span>Working worldwide</span></div>
+        <div class="footer-column"><span class="footer-label">Follow</span>
+          <a href="https://www.instagram.com/ramuya.official/" target="_blank" rel="noopener">Instagram</a>
+          <a href="https://www.linkedin.com/search/results/all/?keywords=Novan%20Mirza%20Arana%20Putro" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://github.com/NovanArana" target="_blank" rel="noopener">GitHub</a></div>
+      </div>
+      <div class="footer-bottom"><span>© 2026 Ramuya. All rights reserved.</span><span>made with intention · and a little code</span></div>
+    </div>
+  </footer>
+
+  <script src="assets/js/vendor/gsap.min.js"></script>
+  <script src="assets/js/vendor/ScrollTrigger.min.js"></script>
+  <script src="assets/js/vendor/lenis.min.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/smooth-scroll.js"></script>
+  <script src="assets/js/intro.js"></script>
+  <script src="assets/js/motion.js"></script>
+  <script src="assets/js/scroll-story.js"></script>
+</body>
+</html>
