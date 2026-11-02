@@ -353,7 +353,7 @@ html:not(.story-on) .marquee div{animation:marquee 30s linear infinite}
 
 /* About */
 .about-story{display:grid;grid-template-columns:.9fr 1.1fr;gap:6vw;align-items:center}
-.portrait-placeholder{position:relative;display:grid;place-items:center;aspect-ratio:4 / 5;border-radius:var(--radius);overflow:hidden;
+.portrait-placeholder{position:relative;display:grid;place-items:center;aspect-ratio:3 / 3;border-radius:var(--radius);overflow:hidden;
   background:linear-gradient(135deg,#2997ff,#a259ff 55%,#ff7a45)}
 .portrait-placeholder span{font-size:clamp(7rem,16vw,13rem);font-weight:600;letter-spacing:-.06em;color:rgba(255,255,255,.95)}
 .portrait-placeholder small{position:absolute;left:24px;bottom:22px;font-size:13px;line-height:1.4;color:rgba(255,255,255,.85)}
